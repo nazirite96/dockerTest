@@ -13,6 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 public class SwaggerConfig {
     // REST API 검색 대상을 com.example.board.web 아래 패키지로 한정시킨다.
+    // TODO 설정 하는 방법을 알아야 할 것 같다.
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.OAS_30)
